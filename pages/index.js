@@ -125,22 +125,6 @@ export default function Home() {
         </filter>
       </defs>
     </svg>
-                {showLoading ? <span>.....</span> : <>{semail ? 'Thanks for joining us ;)' :
-                    <form className="submitmail" onSubmit={submit} >
-                            <input 
-                                id="email"
-                                label="email"
-                                type="email"
-                                className="submitInput" 
-                                value={email} 
-                                onChange={(e)=>{setEmail(e.target.value)}}
-                                placeholder="Join the early beta"
-                                required />
-                        <label style={{fontSize:0}} htmlFor="email">
-                            Join Us
-                        </label>
-                            <button label="Submit" type="submit" className="submit_btn">Join</button>
-                    </form> }</>}
                     <div className='social'>
                 <a
                     href="#downloads"
